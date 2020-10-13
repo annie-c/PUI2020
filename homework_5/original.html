@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bun Bun Bake Shop</title>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"
+        ><img src="assets/logo.png" alt="Bun bun shop logo" class="shop"
+      /></a>
+      <a href="./index.html"><h1 class="shop">Bun Bun Bake Shop</h1></a>
+      <img src="assets/cart.png" alt="Cart" id="cart" />
+    </header>
+    <nav>
+      <div class="nav-page"><a href="./about.html">about</a></div>
+      <div class="nav-page"><a href="./products.html">shop</a></div>
+      <div class="nav-page">contact</div>
+      <div class="nav-page">faq</div>
+    </nav>
+    <a href="./products.html"><div class="back-to">Back to Shop</div></a>
+    <h2 class="title">Original</h2>
+    <div class="product">
+      <img src="assets/original.jpg" />
+      <div class="product-info">
+        <h4>
+          One of the most popular items in our shop: the classic, original
+          cinnamon roll. How can you go wrong?
+        </h4>
+        <h3>Price: $3.00</h3>
+        <div>
+          <h3 class="choices">Glaze:</h3>
+          <div class="glaze default">None</div>
+          <div class="glaze">Sugar Milk</div>
+          <div class="glaze">Vanilla Milk</div>
+          <div class="glaze">Double Chocolate</div>
+        </div>
+        <div style="margin-top: -50px">
+          <h3 class="choices">Quantity:</h3>
+          <section class="quantity-choice">
+            <select name="quantity" id="quantity">
+              <option value="one">1</option>
+              <option value="three">3</option>
+              <option value="six">6</option>
+              <option value="twelve">12</option>
+            </select>
+          </section>
+        </div>
+        <div class="button">Add to Cart</div>
+      </div>
+    </div>
+    <footer>
+      <a href="./about.html">
+        <div class="footer-page">Learn more about the shop here.</div>
+      </a>
+      <div class="footer-page right">Contact Us</div>
+    </footer>
+  </body>
+</html>
