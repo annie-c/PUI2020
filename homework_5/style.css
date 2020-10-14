@@ -1,7 +1,54 @@
+/* page */
 body {
   margin: 0;
 }
 
+/* headings, paragraph, formatting */
+h1 {
+  font: 800 54px "Open Sans";
+  color: #533112;
+}
+
+h2 {
+  font: 600 48px "Open Sans";
+  color: #533112;
+}
+
+h3 {
+  font: 400 30px "Open Sans";
+}
+
+h4 {
+  font: 400 24px "Open Sans";
+}
+
+p {
+  font: 20px "Open Sans";
+  color: #533112;
+}
+
+.title {
+  margin-left: 40px;
+}
+
+.right {
+  float: right;
+}
+
+/* button */
+.button {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: #533112;
+  border-radius: 10px;
+  border: #533112 3px solid;
+  background-color: #e0d29e;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+/* header */
 header img {
   height: 48px;
   padding: 0 30px;
@@ -17,17 +64,7 @@ header img {
   height: 60px;
 }
 
-.right {
-  float: right;
-}
-
-h1 {
-  font-family: "Open Sans";
-  font-size: 54px;
-  color: #533112;
-  font-weight: 800;
-}
-
+/* nav and footer */
 nav {
   background-color: #533112;
   width: 100%;
@@ -38,8 +75,8 @@ nav {
 .nav-page {
   display: inline-block;
   padding: 10px 60px;
-  font-family: "Open Sans";
   color: #e0d29e;
+  font-family: "Open Sans";
   font-size: 20px;
 }
 
@@ -64,6 +101,7 @@ footer {
   font-style: italic;
 }
 
+/* hero image/banner */
 .hero {
   margin: 0;
   position: relative;
@@ -97,34 +135,16 @@ footer {
   top: 400px;
   right: 50px;
   width: 415px;
+  padding: 10px 0;
   border: #533112 3px solid;
+  border-radius: 20px;
   background-color: #e0d29e;
   text-align: center;
-  padding: 10px 0;
-  font-family: "Open Sans";
+  font: 28px "Open Sans";
   color: #533112;
-  font-size: 28px;
-  border-radius: 20px;
 }
 
-h2 {
-  font-family: "Open Sans";
-  font-weight: 600;
-  color: #533112;
-  font-size: 48px;
-}
-
-h4 {
-  font-family: "Open Sans";
-  font-weight: 400;
-  color: black;
-  font-size: 24px;
-}
-
-.title {
-  margin-left: 40px;
-}
-
+/* Products grid view */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -134,35 +154,23 @@ h4 {
 }
 
 .roll {
+  width: 300px;
+  height: 430px;
   border: #533112 5px solid;
   border-radius: 20px;
   margin: 25px 25px;
-  height: 430px;
-  width: 300px;
 }
 
-.button {
-  display: inline-block;
-  font-family: "Open Sans";
-  font-size: 20px;
-  color: #533112;
-  border-radius: 10px;
+.filter {
+  float: right;
+  width: 120px;
+  padding: 0 10px;
   border: #533112 3px solid;
-  background-color: #e0d29e;
-  padding: 5px 10px;
-  margin: 0 10px;
-}
-
-.back-to {
-  display: inline-block;
-  font-family: "Open Sans";
-  font-size: 20px;
-  color: #533112;
   border-radius: 10px;
-  border: #533112 3px solid;
-  padding: 5px 10px;
-  margin-left: 35px;
-  margin-top: 50px;
+  margin-right: 40px;
+  margin-top: -80px;
+  font: 20px "Open Sans";
+  color: #533112;
 }
 
 .roll img {
@@ -171,26 +179,19 @@ h4 {
   border-top-right-radius: 15px;
 }
 
-h3 {
-  font-family: "Open Sans";
-  font-size: 30px;
-  font-weight: 400;
-  color: black;
-}
-
-.filter {
-  float: right;
-  margin-right: 40px;
-  margin-top: -80px;
-  width: 120px;
-  padding: 0 10px;
-  font-family: "Open Sans";
-  font-size: 20px;
-  color: #533112;
+.back-to {
+  display: inline-block;
+  padding: 5px 10px;
   border-radius: 10px;
-  border: #533112 3px solid;
+  border: #533112 2px solid;
+  margin-left: 35px;
+  margin-top: 50px;
+  font: 14px "Open Sans";
+  color: #533112;
+  background-color: #e0d29e;
 }
 
+/* product and about pages */
 .product img,
 .info img {
   float: left;
@@ -214,19 +215,22 @@ h3 {
   margin-left: 400px;
 }
 
+.pick-one {
+  margin-top: -50px;
+}
+
 .choices {
   display: inline-block;
 }
 
 .glaze {
   display: inline-block;
-  font-family: "Open Sans";
-  font-size: 20px;
-  color: #533112;
+  padding: 5px 10px;
   border-radius: 20px;
   border: #533112 3px solid;
-  padding: 5px 10px;
-  margin: 0 10px;
+  margin: 0 5px;
+  font: 20px "Open Sans";
+  color: #533112;
 }
 
 .default {
@@ -236,16 +240,10 @@ h3 {
 
 .quantity-choice {
   display: inline-block;
-  font-family: "Open Sans";
-  font-size: 20px;
-  color: #533112;
+  height: 30px;
   margin-left: 20px;
   margin-top: -30px;
-  height: 30px;
-}
-
-p {
-  font-family: "Open Sans";
+  font: 20px "Open Sans";
   font-size: 20px;
   color: #533112;
 }

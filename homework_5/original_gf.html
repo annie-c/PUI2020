@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Bun Bun Bake Shop</title>
+    <title>Original (GF) - Bun Bun Bake Shop</title>
 
-    <!-- Font -->
+    <!-- Open Sans Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap"
       rel="stylesheet"
@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <a href="./index.html"
         ><img src="assets/logo.png" alt="Bun bun shop logo" class="shop"
@@ -23,30 +24,39 @@
       <a href="./index.html"><h1 class="shop">Bun Bun Bake Shop</h1></a>
       <img src="assets/cart.png" alt="Cart" id="cart" />
     </header>
+    <!-- Navigation Bar -->
     <nav>
       <div class="nav-page"><a href="./about.html">about</a></div>
       <div class="nav-page"><a href="./products.html">shop</a></div>
       <div class="nav-page">contact</div>
       <div class="nav-page">faq</div>
     </nav>
-    <a href="./products.html"><div class="back-to">Back to Shop</div></a>
+    <!-- Back to Shop Button -->
+    <a href="./products.html"><div class="back-to">&lt Back to Shop</div></a>
+
+    <!-- Name of Product -->
     <h2 class="title">Original (Gluten-Free)</h2>
     <div class="product">
+      <!-- Image of product -->
       <img src="assets/original.jpg" />
+      <!-- Product Information -->
       <div class="product-info">
         <h4>
           Remember the classic roll? We also have a gluten-free version for
           those who are careful about their gluten intake. Just as tasty!
         </h4>
+        <!-- Price of product -->
         <h3>Price: $4.00</h3>
-        <div>
+        <!-- Choice of glaze-->
+        <div class="pick-one">
           <h3 class="choices">Glaze:</h3>
           <div class="glaze default">None</div>
           <div class="glaze">Sugar Milk</div>
           <div class="glaze">Vanilla Milk</div>
           <div class="glaze">Double Chocolate</div>
         </div>
-        <div style="margin-top: -50px">
+        <!-- Choice of Quantity -->
+        <div class="pick-one">
           <h3 class="choices">Quantity:</h3>
           <section class="quantity-choice">
             <select name="quantity" id="quantity">
@@ -57,9 +67,11 @@
             </select>
           </section>
         </div>
+        <!-- Add to Cart button -->
         <div class="button">Add to Cart</div>
       </div>
     </div>
+    <!-- Footer -->
     <footer>
       <a href="./about.html">
         <div class="footer-page">Learn more about the shop here.</div>
