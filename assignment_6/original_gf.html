@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Original (GF) - Bun Bun Bake Shop</title>
+
+    <!-- Open Sans Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="main.js"></script>
+  </head>
+  <body onload=loading()>
+    <!-- Header -->
+    <header>
+      <img src="assets/logo.png" alt="Bun bun shop logo" class="shop"/>
+      <a href="./index.html"><h1 class="shop">Bun Bun Bake Shop</h1></a>
+      <a href="./cart.html">
+        <p id="cart"> </p>
+      </a>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-page"><a href="./about.html">about</a></div>
+      <div class="nav-page"><a href="./products.html">shop</a></div>
+      <div class="nav-page">contact</div>
+      <div class="nav-page">faq</div>
+    </nav>
+    <!-- Back to Shop Button -->
+    <a href="./products.html"><div class="back-to">&lt Back to Shop</div></a>
+
+    <!-- Name of Product -->
+    <h2 class="title">Original (Gluten-Free)</h2>
+    <div class="product">
+      <!-- Image of product -->
+      <img src="assets/original.jpg" alt="roll" id="rollImg" />
+      <!-- Product Information -->
+      <div class="product-info">
+        <h4>
+          Remember the classic roll? We also have a gluten-free version for
+          those who are careful about their gluten intake. Just as tasty!
+        </h4>
+        <!-- Price of product -->
+        <h3>Price: $4.00</h3>
+        <!-- Choice of glaze-->
+        <div class="pick-one">
+          <h3 class="choices">Glaze:</h3>
+          <button class="glaze default" onclick="changeGlaze(this, 0)">None</button>
+          <button class="glaze" onclick="changeGlaze(this, 1)">Sugar Milk</button>
+          <button class="glaze" onclick="changeGlaze(this, 2)">Vanilla Milk</button>
+          <button class="glaze" onclick="changeGlaze(this, 3)">Double Chocolate</button>
+        </div>
+        <!-- Choice of Quantity -->
+        <div class="pick-one">
+          <h3 class="choices">Quantity:</h3>
+          <section class="quantity-choice">
+            <select name="quantity" id="quantity" onchange=chooseQuantity(this)>
+              <option value="one">1</option>
+              <option value="three">3</option>
+              <option value="six">6</option>
+              <option value="twelve">12</option>
+            </select>
+          </section>
+        </div>
+        <!-- Add to Cart button -->
+        <button class="button" onclick="addToCart('Original (GF)')">Add to Cart</button>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <a href="./about.html">
+        <div class="footer-page">Learn more about the shop here.</div>
+      </a>
+      <div class="footer-page right">Contact Us</div>
+    </footer>
+  </body>
+</html>
