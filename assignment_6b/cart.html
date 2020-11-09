@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bun Bun Bake Shop</title>
+
+    <!-- Open Sans Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="main.js"></script>
+
+</head>
+
+<body onload=loading()>
+    <!-- Header -->
+    <header>
+        <img src="assets/logo.png" alt="Bun bun shop logo" class="shop" />
+        <a href="./index.html">
+            <h1 class="shop">Bun Bun Bake Shop</h1>
+        </a>
+        <a href="./cart.html">
+            <p id="cart"> </p>
+        </a>
+    </header>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-page"><a href="./about.html">about</a></div>
+        <div class="nav-page"><a href="./products.html">shop</a></div>
+        <div class="nav-page">contact</div>
+        <div class="nav-page">faq</div>
+    </nav>
+    <div>
+        <h2 class="title">Cart</h2>
+    </div>
+    <div id="generalCart">
+        <div id="cartContents">
+        </div>
+
+        <div id="cartCost">
+            <span class="costHeading">Subtotal:</span> 
+            <span id="subtotal">$0.00</span>
+            <br>
+            <span class="costHeading">Delivery:</span>
+            <span id="delivery">$0.00</span>
+            <br>
+            <span class="costHeading"><b>Total:</b></span>
+            <span id="total"><b>$0.00</b></span>
+        </div>
+
+        <div id="checkout">Proceed to Checkout</div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="./about.html">
+            <div class="footer-page">Learn more about the shop here.</div>
+        </a>
+        <div class="footer-page right">Contact Us</div>
+    </footer>
+</body>
+
+</html>
